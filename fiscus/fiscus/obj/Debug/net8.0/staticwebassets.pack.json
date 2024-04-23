@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/alexmaurer/Documents/fiscus/fiscus/fiscus/obj/Debug/net8.0/scopedcss/projectbundle/fiscus.bundle.scp.css",
+      "PackagePath": "staticwebassets/fiscus.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/alexmaurer/Documents/fiscus/fiscus/fiscus/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/alexmaurer/Documents/fiscus/fiscus/fiscus/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/alexmaurer/Documents/fiscus/fiscus/fiscus/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/alexmaurer/Documents/fiscus/fiscus/fiscus/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.fiscus.props",
+      "PackagePath": "build\\fiscus.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.fiscus.props",
+      "PackagePath": "buildMultiTargeting\\fiscus.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.fiscus.props",
+      "PackagePath": "buildTransitive\\fiscus.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.fiscus.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
