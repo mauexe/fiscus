@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fiscus", "fiscus\fiscus.csproj", "{EAF29724-1A53-4C0B-9681-6B04915DDA84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAF29724-1A53-4C0B-9681-6B04915DDA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF29724-1A53-4C0B-9681-6B04915DDA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF29724-1A53-4C0B-9681-6B04915DDA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF29724-1A53-4C0B-9681-6B04915DDA84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
