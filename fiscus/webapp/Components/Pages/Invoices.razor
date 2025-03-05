@@ -1,0 +1,61 @@
+@page "/invoices"
+@using Microsoft.EntityFrameworkCore
+@using model.DbContext
+@using model.Entities
+@inject FiscusDbContext FiscusDb
+<PageTitle>Rechnungen</PageTitle>
+
+<MudText Typo="Typo.h3" GutterBottom="true">Rechnungen</MudText>
+<MudText Class="mb-8">Welcome to your new app, powered by MudBlazor and the .NET 9 Template!</MudText>
+
+<MudTable Items="@_invoices" Hover="true" Striped="true" Filter="new Func<Invoice,bool>(FilterFunc1)" @bind-SelectedItem="_selectedInvoice">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Periodic Elements</MudText>
+        <MudSpacer />
+        <MudTextField @bind-Value="searchString1" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh>Rechnungsnr.</MudTh>
+        <MudTh>Datum</MudTh>
+        <MudTh>An</MudTh>
+        <MudTh>Summe</MudTh>
+        <MudTh>bezahlt?</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Rechnungsnr.">@context.Code</MudTd>
+        <MudTd DataLabel="Datum">@context.Date</MudTd>
+        <MudTd DataLabel="An">@context.Recipient.Name</MudTd>
+        <MudTd DataLabel="Summe">@context.Total</MudTd>
+        <MudTd DataLabel="Bezahlt">@context.Paid</MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>
+
+@code {
+    List<Invoice> _invoices = new List<Invoice>();
+    Invoice _selectedInvoice;
+    string searchString1;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        _invoices = await FiscusDb.Set<Invoice>().Include(i => i.IssuedBy).Include(i => i.Recipient).ToListAsync(); 
+    }
+
+    private bool FilterFunc1(Invoice invoice) => FilterFunc(invoice, searchString1);
+    
+    private bool FilterFunc(Invoice invoice, string searchString)
+    {
+        if (string.IsNullOrWhiteSpace(searchString))
+            return true;
+        if (invoice.Recipient.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (invoice.IssuedBy.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if ($"{invoice.Code} {invoice.Total} {invoice.Link}".Contains(searchString))
+            return true;
+        return false;
+    }
+
+}

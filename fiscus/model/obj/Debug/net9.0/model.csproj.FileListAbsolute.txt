@@ -1,0 +1,15 @@
+/Users/alex/Developer/repos/fiscus/fiscus/model/bin/Debug/net9.0/model.deps.json
+/Users/alex/Developer/repos/fiscus/fiscus/model/bin/Debug/net9.0/model.dll
+/Users/alex/Developer/repos/fiscus/fiscus/model/bin/Debug/net9.0/model.pdb
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/model.csproj.AssemblyReference.cache
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/model.AssemblyInfoInputs.cache
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/model.AssemblyInfo.cs
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/model.csproj.CoreCompileInputs.cache
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/model.sourcelink.json
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/model.dll
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/refint/model.dll
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/model.pdb
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/ref/model.dll
+/Users/alex/Developer/repos/fiscus/fiscus/model/bin/Debug/net9.0/model.runtimeconfig.json
+/Users/alex/Developer/repos/fiscus/fiscus/model/obj/Debug/net9.0/model.genruntimeconfig.cache
