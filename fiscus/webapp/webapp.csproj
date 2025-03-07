@@ -15,11 +15,18 @@
         </PackageReference>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.2" />
         <PackageReference Include="MudBlazor" Version="8.*"/>
+        <PackageReference Include="System.Linq.Async" Version="6.0.1" />
     </ItemGroup>
 
 
     <ItemGroup>
       <ProjectReference Include="..\domain\domain.csproj" />
       <ProjectReference Include="..\model\model.csproj" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <Folder Include="Documents\" />
+      <Folder Include="wwwroot\docs\" />
     </ItemGroup>
 </Project>

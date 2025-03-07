@@ -3,18 +3,21 @@
 @using Microsoft.EntityFrameworkCore
 @using model.DbContext
 @using model.Entities
+@using webapp.Components.Dialogs
 @inject IRepository<Invoice> repository
+@inject IRepository<Organisation> _organisationRepository
+@inject IDialogService DialogService
 
 <PageTitle>Rechnungen</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">Rechnungen</MudText>
-<MudText Class="mb-8">Hier siehst du alle Rechnungen.</MudText>
+<MudText Class="mb-8">Hier siehst du alle Rechnungen von @Organisation.Name.</MudText>
 
 <MudTable Items="@_invoices" Hover="true" Striped="true" Filter="new Func<Invoice,bool>(FilterFunc1)" @bind-SelectedItem="_selectedInvoice" Loading="@_loading">
     <ToolBarContent>
         <MudButtonGroup Color="Color.Primary" Variant="Variant.Outlined">
             <MudButton StartIcon="@Icons.Material.Filled.Refresh" OnClick="RefreshData">Refresh</MudButton>
-            <MudButton StartIcon="@Icons.Material.Filled.Receipt">Rechnung hinzufügen</MudButton>
+            <MudButton StartIcon="@Icons.Material.Filled.Receipt" OnClick="OpenAddDialogAsync">Rechnung hinzufügen</MudButton>
         </MudButtonGroup>
         <MudSpacer/>
         <MudTextField @bind-Value="searchString1" Placeholder="Suche" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
@@ -28,7 +31,7 @@
     </HeaderContent>
     <RowTemplate>
         <MudTd DataLabel="Rechnungsnr.">@context.Code</MudTd>
-        <MudTd DataLabel="Datum">@context.Date</MudTd>
+        <MudTd DataLabel="Datum">@context.Date.ToShortDateString()</MudTd>
         <MudTd DataLabel="An">@context.Recipient.Name</MudTd>
         <MudTd DataLabel="Summe">@context.Total€</MudTd>
         <MudTd DataLabel="Bezahlt">
@@ -47,18 +50,20 @@
 
 @code {
     IEnumerable<Invoice> _invoices = new List<Invoice>();
+    Organisation Organisation { get; set; }
     Invoice _selectedInvoice;
     string searchString1;
     bool _loading;
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    protected override async Task OnInitializedAsync()
     {
-        if (firstRender)
-            await RefreshData();
+        Organisation = await _organisationRepository.GetAsync(1);
+        RefreshData();
     }
 
     async Task RefreshData()
     {
+        Console.WriteLine("reload data");
         _loading = true;
         _invoices = await repository.GetAllAsync(); 
         _loading = false;
@@ -79,5 +84,27 @@
             return true;
         return false;
     }
+    
+    private async Task OpenAddDialogAsync()
+    {
+        var options = new DialogOptions { BackgroundClass = "background-blurry" };
+        var parameters = new DialogParameters<AddInvoice>
+        {
+            { x => x.Organisation, Organisation }
+        };
+
+        var dialog = await DialogService.ShowAsync<AddInvoice>("Rechnung hinzufügen", parameters, options);
+        var result = await dialog.Result;
+        
+        if (!result.Canceled)
+        // TODO: Check if successful -> show Snackbar
+            await RefreshData();
+    }
 
 }
+
+<style>
+    .background-blurry {
+        backdrop-filter: blur(10px);
+    }
+</style>

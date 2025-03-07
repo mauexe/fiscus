@@ -14,8 +14,10 @@ builder.Services.AddMudServices();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddDbContext<FiscusDbContext>(options => options.UseSqlite($"Data Source=fiscus.sqlite"));
+builder.Services.AddDbContext<FiscusDbContext>(options => options.UseSqlite($"Data Source=Database/fiscus.sqlite"));
 builder.Services.AddScoped<IRepository<Invoice>,InvoiceRepository>();
+builder.Services.AddScoped<IRepository<Recipient>,RecipientRepository>();
+builder.Services.AddScoped<IRepository<Organisation>,OrganisationRepository>();
 
 var app = builder.Build();
 

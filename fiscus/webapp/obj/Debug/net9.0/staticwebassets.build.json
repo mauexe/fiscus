@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MPKJud4blb+atGTDtQ8HhmRIOB5JdtMlzzrVr4nmol8=",
+  "Hash": "qkl1Moez/HmKpEovgMJBw0K9FpDzVeaIKMc8A7Ff8dM=",
   "Source": "webapp",
   "BasePath": "_content/webapp",
   "Mode": "Default",
@@ -120,6 +120,216 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/120b594c-f74a-42d2-b085-db7ba1c283eb.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/120b594c-f74a-42d2-b085-db7ba1c283eb#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y5ydwc5zs6",
+      "Integrity": "yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/120b594c-f74a-42d2-b085-db7ba1c283eb.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/2a3d2563-dacb-45a0-9201-ce8ac28e5449.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/2a3d2563-dacb-45a0-9201-ce8ac28e5449#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y5ydwc5zs6",
+      "Integrity": "yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/2a3d2563-dacb-45a0-9201-ce8ac28e5449.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/33233e1f-1d9b-4703-9bc2-ad88128849b6.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/33233e1f-1d9b-4703-9bc2-ad88128849b6#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y5ydwc5zs6",
+      "Integrity": "yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/33233e1f-1d9b-4703-9bc2-ad88128849b6.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/3bcb2e74-2376-4296-911a-a509fa8c90e2.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/3bcb2e74-2376-4296-911a-a509fa8c90e2#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y5ydwc5zs6",
+      "Integrity": "yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/3bcb2e74-2376-4296-911a-a509fa8c90e2.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/434c4fe8-97dc-4e7e-b090-c043c8180453.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/434c4fe8-97dc-4e7e-b090-c043c8180453#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqv0a4hb1c",
+      "Integrity": "SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/434c4fe8-97dc-4e7e-b090-c043c8180453.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/5771ce1d-6a3d-467c-a273-9dda22d23c70.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/5771ce1d-6a3d-467c-a273-9dda22d23c70#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqv0a4hb1c",
+      "Integrity": "SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/5771ce1d-6a3d-467c-a273-9dda22d23c70.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/766cf3e4-0223-403b-869b-05d2854c8996.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/766cf3e4-0223-403b-869b-05d2854c8996#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqv0a4hb1c",
+      "Integrity": "SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/766cf3e4-0223-403b-869b-05d2854c8996.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/87512688-5e39-490e-850a-287cccd5eae2.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/87512688-5e39-490e-850a-287cccd5eae2#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqv0a4hb1c",
+      "Integrity": "SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/87512688-5e39-490e-850a-287cccd5eae2.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/ccc4650e-9964-4375-9dc9-c2ef42d0b4a5.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/ccc4650e-9964-4375-9dc9-c2ef42d0b4a5#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqv0a4hb1c",
+      "Integrity": "SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/ccc4650e-9964-4375-9dc9-c2ef42d0b4a5.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/f23dcb3a-e56e-4586-9886-7f2600d64967.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/f23dcb3a-e56e-4586-9886-7f2600d64967#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqv0a4hb1c",
+      "Integrity": "SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/f23dcb3a-e56e-4586-9886-7f2600d64967.pdf"
     },
     {
       "Identity": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/favicon.ico",
@@ -505,6 +715,826 @@
         {
           "Name": "label",
           "Value": "_content/MudBlazor/MudBlazor.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "docs/120b594c-f74a-42d2-b085-db7ba1c283eb.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/120b594c-f74a-42d2-b085-db7ba1c283eb.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "390073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:34:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE="
+        }
+      ]
+    },
+    {
+      "Route": "docs/120b594c-f74a-42d2-b085-db7ba1c283eb.y5ydwc5zs6.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/120b594c-f74a-42d2-b085-db7ba1c283eb.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "390073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:34:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y5ydwc5zs6"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/120b594c-f74a-42d2-b085-db7ba1c283eb.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE="
+        }
+      ]
+    },
+    {
+      "Route": "docs/2a3d2563-dacb-45a0-9201-ce8ac28e5449.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/2a3d2563-dacb-45a0-9201-ce8ac28e5449.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "390073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:37:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE="
+        }
+      ]
+    },
+    {
+      "Route": "docs/2a3d2563-dacb-45a0-9201-ce8ac28e5449.y5ydwc5zs6.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/2a3d2563-dacb-45a0-9201-ce8ac28e5449.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "390073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:37:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y5ydwc5zs6"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/2a3d2563-dacb-45a0-9201-ce8ac28e5449.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE="
+        }
+      ]
+    },
+    {
+      "Route": "docs/33233e1f-1d9b-4703-9bc2-ad88128849b6.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/33233e1f-1d9b-4703-9bc2-ad88128849b6.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "390073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:37:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE="
+        }
+      ]
+    },
+    {
+      "Route": "docs/33233e1f-1d9b-4703-9bc2-ad88128849b6.y5ydwc5zs6.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/33233e1f-1d9b-4703-9bc2-ad88128849b6.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "390073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:37:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y5ydwc5zs6"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/33233e1f-1d9b-4703-9bc2-ad88128849b6.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE="
+        }
+      ]
+    },
+    {
+      "Route": "docs/3bcb2e74-2376-4296-911a-a509fa8c90e2.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/3bcb2e74-2376-4296-911a-a509fa8c90e2.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "390073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:40:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE="
+        }
+      ]
+    },
+    {
+      "Route": "docs/3bcb2e74-2376-4296-911a-a509fa8c90e2.y5ydwc5zs6.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/3bcb2e74-2376-4296-911a-a509fa8c90e2.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "390073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:40:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y5ydwc5zs6"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/3bcb2e74-2376-4296-911a-a509fa8c90e2.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yjGQeBJVGI2cNT6pGyuqwm8WrRO3FnSiC4wN6FJ1TBE="
+        }
+      ]
+    },
+    {
+      "Route": "docs/434c4fe8-97dc-4e7e-b090-c043c8180453.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/434c4fe8-97dc-4e7e-b090-c043c8180453.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:36:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/434c4fe8-97dc-4e7e-b090-c043c8180453.uqv0a4hb1c.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/434c4fe8-97dc-4e7e-b090-c043c8180453.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:36:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/434c4fe8-97dc-4e7e-b090-c043c8180453.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/5771ce1d-6a3d-467c-a273-9dda22d23c70.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/5771ce1d-6a3d-467c-a273-9dda22d23c70.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:29:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/5771ce1d-6a3d-467c-a273-9dda22d23c70.uqv0a4hb1c.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/5771ce1d-6a3d-467c-a273-9dda22d23c70.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:29:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/5771ce1d-6a3d-467c-a273-9dda22d23c70.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/766cf3e4-0223-403b-869b-05d2854c8996.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/766cf3e4-0223-403b-869b-05d2854c8996.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:14:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/766cf3e4-0223-403b-869b-05d2854c8996.uqv0a4hb1c.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/766cf3e4-0223-403b-869b-05d2854c8996.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:14:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/766cf3e4-0223-403b-869b-05d2854c8996.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/87512688-5e39-490e-850a-287cccd5eae2.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/87512688-5e39-490e-850a-287cccd5eae2.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:27:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/87512688-5e39-490e-850a-287cccd5eae2.uqv0a4hb1c.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/87512688-5e39-490e-850a-287cccd5eae2.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:27:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/87512688-5e39-490e-850a-287cccd5eae2.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/ccc4650e-9964-4375-9dc9-c2ef42d0b4a5.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/ccc4650e-9964-4375-9dc9-c2ef42d0b4a5.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:18:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/ccc4650e-9964-4375-9dc9-c2ef42d0b4a5.uqv0a4hb1c.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/ccc4650e-9964-4375-9dc9-c2ef42d0b4a5.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:18:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/ccc4650e-9964-4375-9dc9-c2ef42d0b4a5.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/f23dcb3a-e56e-4586-9886-7f2600d64967.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/f23dcb3a-e56e-4586-9886-7f2600d64967.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:30:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/f23dcb3a-e56e-4586-9886-7f2600d64967.uqv0a4hb1c.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/fiscus/webapp/wwwroot/docs/f23dcb3a-e56e-4586-9886-7f2600d64967.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 13:30:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/f23dcb3a-e56e-4586-9886-7f2600d64967.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
         }
       ]
     },

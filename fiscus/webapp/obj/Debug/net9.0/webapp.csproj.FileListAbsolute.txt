@@ -150,3 +150,4 @@
 /Users/alex/Developer/repos/fiscus/fiscus/webapp/bin/Debug/net9.0/runtimes/win-x86/native/e_sqlite3.dll
 /Users/alex/Developer/repos/fiscus/fiscus/webapp/bin/Debug/net9.0/domain.dll
 /Users/alex/Developer/repos/fiscus/fiscus/webapp/bin/Debug/net9.0/domain.pdb
+/Users/alex/Developer/repos/fiscus/fiscus/webapp/bin/Debug/net9.0/System.Linq.Async.dll
