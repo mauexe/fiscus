@@ -18,7 +18,9 @@ public class FiscusDbContext : Microsoft.EntityFrameworkCore.DbContext
         builder.Entity<Invoice>().HasOne<Recipient>(i => i.Recipient).WithMany(o => o.Invoices).HasForeignKey(i => i.RecipientId);
         builder.Entity<Invoice>().HasKey(i => new { i.Code, i.IssuedById });
         builder.Entity<Invoice>().HasMany<Position>(i => i.Positions).WithOne(p => p.Invoice).HasForeignKey(p => new {p.InvoiceCode,p.InvoiceOrgId});
-        
+        builder.Entity<Invoice>().Navigation(i => i.IssuedBy).AutoInclude();
+        builder.Entity<Invoice>().Navigation(i => i.Recipient).AutoInclude();
+        builder.Entity<Invoice>().Navigation(i => i.Positions).AutoInclude();
         base.OnModelCreating(builder);
     }
 }

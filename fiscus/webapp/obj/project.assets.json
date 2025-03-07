@@ -1240,6 +1240,20 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.2",
+          "model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/domain.dll": {}
+        }
+      },
       "model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -3424,6 +3438,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "domain/1.0.0": {
+      "type": "project",
+      "path": "../domain/domain.csproj",
+      "msbuildProject": "../domain/domain.csproj"
+    },
     "model/1.0.0": {
       "type": "project",
       "path": "../model/model.csproj",
@@ -3436,6 +3455,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.2",
       "MudBlazor >= 8.*",
+      "domain >= 1.0.0",
       "model >= 1.0.0"
     ]
   },
@@ -3464,6 +3484,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "/Users/alex/Developer/repos/fiscus/fiscus/domain/domain.csproj": {
+              "projectPath": "/Users/alex/Developer/repos/fiscus/fiscus/domain/domain.csproj"
+            },
             "/Users/alex/Developer/repos/fiscus/fiscus/model/model.csproj": {
               "projectPath": "/Users/alex/Developer/repos/fiscus/fiscus/model/model.csproj"
             }

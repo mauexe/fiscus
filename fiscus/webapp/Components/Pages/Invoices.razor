@@ -1,18 +1,23 @@
 @page "/invoices"
+@using domain
 @using Microsoft.EntityFrameworkCore
 @using model.DbContext
 @using model.Entities
-@inject FiscusDbContext FiscusDb
+@inject IRepository<Invoice> repository
+
 <PageTitle>Rechnungen</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">Rechnungen</MudText>
-<MudText Class="mb-8">Welcome to your new app, powered by MudBlazor and the .NET 9 Template!</MudText>
+<MudText Class="mb-8">Hier siehst du alle Rechnungen.</MudText>
 
-<MudTable Items="@_invoices" Hover="true" Striped="true" Filter="new Func<Invoice,bool>(FilterFunc1)" @bind-SelectedItem="_selectedInvoice">
+<MudTable Items="@_invoices" Hover="true" Striped="true" Filter="new Func<Invoice,bool>(FilterFunc1)" @bind-SelectedItem="_selectedInvoice" Loading="@_loading">
     <ToolBarContent>
-        <MudText Typo="Typo.h6">Periodic Elements</MudText>
-        <MudSpacer />
-        <MudTextField @bind-Value="searchString1" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+        <MudButtonGroup Color="Color.Primary" Variant="Variant.Outlined">
+            <MudButton StartIcon="@Icons.Material.Filled.Refresh" OnClick="RefreshData">Refresh</MudButton>
+            <MudButton StartIcon="@Icons.Material.Filled.Receipt">Rechnung hinzufügen</MudButton>
+        </MudButtonGroup>
+        <MudSpacer/>
+        <MudTextField @bind-Value="searchString1" Placeholder="Suche" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
     </ToolBarContent>
     <HeaderContent>
         <MudTh>Rechnungsnr.</MudTh>
@@ -25,24 +30,41 @@
         <MudTd DataLabel="Rechnungsnr.">@context.Code</MudTd>
         <MudTd DataLabel="Datum">@context.Date</MudTd>
         <MudTd DataLabel="An">@context.Recipient.Name</MudTd>
-        <MudTd DataLabel="Summe">@context.Total</MudTd>
-        <MudTd DataLabel="Bezahlt">@context.Paid</MudTd>
+        <MudTd DataLabel="Summe">@context.Total€</MudTd>
+        <MudTd DataLabel="Bezahlt">
+            @if (context.Paid)
+            {
+                <MudIcon Icon="@Icons.Material.Filled.CheckCircle" Color="Color.Success"></MudIcon>
+            }
+            else
+            {
+                <MudIcon Icon="@Icons.Material.Filled.Cancel" Color="Color.Error"></MudIcon>
+            }
+        </MudTd>
     </RowTemplate>
-    <PagerContent>
-        <MudTablePager />
-    </PagerContent>
 </MudTable>
 
+
 @code {
-    List<Invoice> _invoices = new List<Invoice>();
+    IEnumerable<Invoice> _invoices = new List<Invoice>();
     Invoice _selectedInvoice;
     string searchString1;
-    
-    protected override async Task OnInitializedAsync()
+    bool _loading;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        _invoices = await FiscusDb.Set<Invoice>().Include(i => i.IssuedBy).Include(i => i.Recipient).ToListAsync(); 
+        if (firstRender)
+            await RefreshData();
     }
 
+    async Task RefreshData()
+    {
+        _loading = true;
+        _invoices = await repository.GetAllAsync(); 
+        _loading = false;
+        StateHasChanged();
+    }
+    
     private bool FilterFunc1(Invoice invoice) => FilterFunc(invoice, searchString1);
     
     private bool FilterFunc(Invoice invoice, string searchString)

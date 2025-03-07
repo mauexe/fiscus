@@ -1,5 +1,7 @@
+using domain;
 using Microsoft.EntityFrameworkCore;
 using model.DbContext;
+using model.Entities;
 using MudBlazor.Services;
 using webapp.Components;
 
@@ -13,6 +15,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddDbContext<FiscusDbContext>(options => options.UseSqlite($"Data Source=fiscus.sqlite"));
+builder.Services.AddScoped<IRepository<Invoice>,InvoiceRepository>();
 
 var app = builder.Build();
 
