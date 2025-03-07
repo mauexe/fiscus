@@ -4,6 +4,7 @@ using model.DbContext;
 using model.Entities;
 using MudBlazor.Services;
 using webapp.Components;
+using webapp.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<FiscusDbContext>(options => options.UseSqlite($"Da
 builder.Services.AddScoped<IRepository<Invoice>,InvoiceRepository>();
 builder.Services.AddScoped<IRepository<Recipient>,RecipientRepository>();
 builder.Services.AddScoped<IRepository<Organisation>,OrganisationRepository>();
+builder.Services.AddScoped<AppState>();
 
 var app = builder.Build();
 

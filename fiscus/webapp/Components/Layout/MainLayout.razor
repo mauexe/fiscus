@@ -1,23 +1,42 @@
-﻿@inherits LayoutComponentBase
+﻿@using System.Data.SqlTypes
+@using domain
+@using model.Entities
+@using webapp.Configuration
+@inherits LayoutComponentBase
+@inject AppState AppState
+@inject IRepository<Organisation> _organisationRepository
 
 <MudThemeProvider @ref="@_mudThemeProvider" @bind-IsDarkMode="@_isDarkMode" Theme="@_theme"/>
 <MudPopoverProvider/>
 <MudDialogProvider/>
 <MudSnackbarProvider/>
 <MudLayout>
-    <MudAppBar Elevation="1">
-        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
-        <MudText Typo="Typo.h5" Class="ml-3">fiscus</MudText>
-        <MudSpacer/>
-        <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle"/>
-        <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End"/>
-    </MudAppBar>
-    <MudDrawer id="nav-drawer" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
-        <NavMenu/>
-    </MudDrawer>
-    <MudMainContent Class="mt-16 pa-4">
-        @Body
-    </MudMainContent>
+    <CascadingValue Value="AppState">
+        <MudAppBar Elevation="1">
+            <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start"
+                           OnClick="@((e) => DrawerToggle())"/>
+            <MudText Typo="Typo.h5" Class="ml-3">fiscus</MudText>
+            <MudSpacer/>
+            <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle"/>
+            <MudMenu>
+                <ActivatorContent>
+                    <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End"/>
+                </ActivatorContent>
+                <ChildContent>
+                    @foreach (var i in _organisations)
+                    {
+                        <MudMenuItem Label="@i.Name" OnClick="() => ChangeOrganisation(i)"></MudMenuItem>
+                    }
+                </ChildContent>
+            </MudMenu>
+        </MudAppBar>
+        <MudDrawer id="nav-drawer" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+            <NavMenu/>
+        </MudDrawer>
+        <MudMainContent Class="mt-16 pa-4">
+            @Body
+        </MudMainContent>
+    </CascadingValue>
 </MudLayout>
 
 
@@ -32,6 +51,7 @@
     private bool _isDarkMode = false;
     private MudTheme? _theme = null;
     private MudThemeProvider _mudThemeProvider;
+    private IEnumerable<Organisation> _organisations;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -41,7 +61,13 @@
             StateHasChanged();
         }
     }
-    
+
+    protected override async Task OnInitializedAsync()
+    {
+        _organisations = await _organisationRepository.GetAllAsync();
+        AppState.SelectedOrganization = _organisations.First();
+    }
+
     private Task OnSystemPreferenceChanged(bool newValue)
     {
         _isDarkMode = newValue;
@@ -116,5 +142,12 @@
         true => Icons.Material.Rounded.AutoMode,
         false => Icons.Material.Outlined.DarkMode,
     };
+
+    private async Task ChangeOrganisation(Organisation organisation)
+    {
+        Console.WriteLine("Change Organisation ! ! !");
+        AppState.SelectedOrganization = organisation;
+        StateHasChanged();
+    }
 
 }
