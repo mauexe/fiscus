@@ -1,9 +1,10 @@
 @using domain
 @using model.Entities
-@inject IRepository<Invoice> _invoiceRepository
+@inject IInvoiceRepository _invoiceRepository
 @inject IRepository<Organisation> _organisationRepository
 @inject IRepository<Recipient> _recipientRepository
 @inject NavigationManager Navigator
+@inject ISnackbar Snackbar
 
 <MudDialog>
     <TitleContent>
@@ -14,20 +15,25 @@
     </TitleContent>
     <DialogContent>
         <MudForm @bind-IsValid="_formValid">
+            <div class="d-flex justify-center">
+                <MudFileUpload T="IBrowserFile" Accept=".pdf, .jpg, .png" FilesChanged="UploadFiles" MaximumFileCount="10" Required="true" RequiredError="Die Rechnung muss hochgeladen werden!">
+                    <ActivatorContent>
+                        <MudButton Color="Color.Primary"
+                                   StartIcon="@Icons.Material.Filled.CloudUpload">
+                            Rechnung hochladen
+                        </MudButton>
+                    </ActivatorContent>
+                    <SelectedTemplate>
+                        <MudText Align="Align.Center" Typo="Typo.body2">@(context is not null ? context.Name : "Keine Datei ausgewählt.")</MudText>
+                    </SelectedTemplate>
+                </MudFileUpload>
+            </div>
             <MudTextField T="string" Label="Rechnungsnummer" Required="true"
                           RequiredError="Die Rechnungsnummer ist erforderlich!" @bind-Value="_invoiceNr"/>
             <MudDatePicker Label="Ausstellungsdatum" @bind-Date="_date" ShowToolbar="false" Required="true" RequiredError="Das Datum ist erforderlich!"/>
-            <MudNumericField @bind-Value="_total" Label="Summe" Step=".2M" Required="true" RequiredError="Die Summe ist erforderlich!"/>
-            <MudAutocomplete T="Recipient" Label="@(_loading?"Lädt...":"Empfänger")" Required="true" RequiredError="Der Empfänger ist erforderlich!" @bind-Value="_selectedRecipient" Disabled="@_loading"
+            <MudNumericField @bind-Value="_total" Label="Summe" Required="true" RequiredError="Die Summe ist erforderlich!"/>
+            <MudAutocomplete T="Recipient" Label="@(_loading ? "Lädt..." : "Empfänger")" Required="true" RequiredError="Der Empfänger ist erforderlich!" @bind-Value="_selectedRecipient" Disabled="@_loading"
                              SearchFunc="@Search" ToStringFunc="@(e => e == null ? null : $"{e.Name}")"/>
-            <MudFileUpload T="IBrowserFile" Accept=".pdf, .jpg, .png" FilesChanged="UploadFiles" MaximumFileCount="10" Required="true" RequiredError="Die Rechnung muss hochgeladen werden!">
-                <ActivatorContent>
-                    <MudButton Color="Color.Primary"
-                               StartIcon="@Icons.Material.Filled.CloudUpload">
-                        Rechnung hochladen
-                    </MudButton>
-                </ActivatorContent>
-            </MudFileUpload>
         </MudForm>
     </DialogContent>
     <DialogActions>
@@ -51,7 +57,7 @@
     private string _invoiceNr;
     private DateTime? _date;
     private decimal _total;
-    private IBrowserFile _file;
+    private IBrowserFile? _file;
 
     protected override async Task OnInitializedAsync()
     {
@@ -77,27 +83,31 @@
         string path = $"./wwwroot/docs/{name}";
         await using FileStream fs = new(path, FileMode.Create);
         await _file.OpenReadStream(250000000L).CopyToAsync(fs);
-        
-        Console.WriteLine(Organisation.Name);
-        
-        Invoice invoice = new Invoice()
+
+        if (await _invoiceRepository.ExistsAsync(_invoiceNr, Organisation))
         {
-            Code = _invoiceNr,
-            Date = _date.Value,
-            IssuedBy = Organisation,
-            IssuedById = Organisation.Id,
-            Link = $"{Navigator.BaseUri}docs/{name}",
-            Paid = false,
-            Recipient = _selectedRecipient,
-            Total = _total
-        };
+            Snackbar.Add($"Diese Rechnungsnummer wurde von {Organisation.Name} bereits ausgestellt.", Severity.Error);
+        }
+        else
+        {
+            Invoice invoice = new Invoice()
+            {
+                Code = _invoiceNr,
+                Date = _date.Value,
+                IssuedBy = Organisation,
+                IssuedById = Organisation.Id,
+                Link = $"{Navigator.BaseUri}docs/{name}",
+                Paid = false,
+                Recipient = _selectedRecipient,
+                Total = _total
+            };
 
-        await _invoiceRepository.AddAsync(invoice);
+            await _invoiceRepository.AddAsync(invoice);
 
+            Snackbar.Add("Die Rechnung wurde hinzugefügt.", Severity.Success);
         
-        MudDialog.Close(DialogResult.Ok(true));
-        
-        
+            MudDialog.Close(DialogResult.Ok(true));
+        }
     }
 
     private void Cancel() => MudDialog.Cancel();

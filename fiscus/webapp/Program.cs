@@ -17,6 +17,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddDbContext<FiscusDbContext>(options => options.UseSqlite($"Data Source=Database/fiscus.sqlite"));
 builder.Services.AddScoped<IRepository<Invoice>,InvoiceRepository>();
+builder.Services.AddScoped<IInvoiceRepository,InvoiceRepository>();
 builder.Services.AddScoped<IRepository<Recipient>,RecipientRepository>();
 builder.Services.AddScoped<IRepository<Organisation>,OrganisationRepository>();
 builder.Services.AddScoped<AppState>();
