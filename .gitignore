@@ -4,4 +4,4 @@
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal
-fiscus/webapp/wwwroot/docs/
+webapp/wwwroot/docs/
