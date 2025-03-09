@@ -1,5 +1,29 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/webapp/docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\3feb574b-0b6e-4407-a703-9c7d626355dc.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F\u002BXKqEY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"137618"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F\u002BXKqEY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 15:11:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/webapp/docs/3feb574b-0b6e-4407-a703-9c7d626355dc.uqv0a4hb1c.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\3feb574b-0b6e-4407-a703-9c7d626355dc.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uqv0a4hb1c"},{"Name":"integrity","Value":"sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F\u002BXKqEY="},{"Name":"label","Value":"_content/webapp/docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"137618"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F\u002BXKqEY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 15:11:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/webapp/docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\6159c329-349b-41a8-8a0c-fc592c35643b.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F\u002BXKqEY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"137618"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F\u002BXKqEY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 15:44:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/webapp/docs/6159c329-349b-41a8-8a0c-fc592c35643b.uqv0a4hb1c.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\6159c329-349b-41a8-8a0c-fc592c35643b.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uqv0a4hb1c"},{"Name":"integrity","Value":"sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F\u002BXKqEY="},{"Name":"label","Value":"_content/webapp/docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"137618"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F\u002BXKqEY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 15:44:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/webapp/favicon.2jeq8efc6q.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

@@ -1138,11 +1138,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alex/Developer/repos/fiscus/fiscus/domain/domain.csproj",
+      "projectUniqueName": "/Users/alex/Developer/repos/fiscus/domain/domain.csproj",
       "projectName": "domain",
-      "projectPath": "/Users/alex/Developer/repos/fiscus/fiscus/domain/domain.csproj",
+      "projectPath": "/Users/alex/Developer/repos/fiscus/domain/domain.csproj",
       "packagesPath": "/Users/alex/.nuget/packages/",
-      "outputPath": "/Users/alex/Developer/repos/fiscus/fiscus/domain/obj/",
+      "outputPath": "/Users/alex/Developer/repos/fiscus/domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/alex/.nuget/NuGet/NuGet.Config"
@@ -1157,8 +1157,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/alex/Developer/repos/fiscus/fiscus/model/model.csproj": {
-              "projectPath": "/Users/alex/Developer/repos/fiscus/fiscus/model/model.csproj"
+            "/Users/alex/Developer/repos/fiscus/model/model.csproj": {
+              "projectPath": "/Users/alex/Developer/repos/fiscus/model/model.csproj"
             }
           }
         }

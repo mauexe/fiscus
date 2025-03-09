@@ -367,6 +367,170 @@
       ]
     },
     {
+      "Route": "docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf",
+      "AssetFile": "docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 15:11:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/3feb574b-0b6e-4407-a703-9c7d626355dc.uqv0a4hb1c.pdf",
+      "AssetFile": "docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 15:11:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        },
+        {
+          "Name": "label",
+          "Value": "docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf",
+      "AssetFile": "docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 15:44:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/6159c329-349b-41a8-8a0c-fc592c35643b.uqv0a4hb1c.pdf",
+      "AssetFile": "docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 15:44:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        },
+        {
+          "Name": "label",
+          "Value": "docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf"
+        }
+      ]
+    },
+    {
       "Route": "favicon.2jeq8efc6q.ico",
       "AssetFile": "favicon.ico.gz",
       "Selectors": [

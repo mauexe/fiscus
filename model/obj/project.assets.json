@@ -3085,11 +3085,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alex/Developer/repos/fiscus/fiscus/model/model.csproj",
+      "projectUniqueName": "/Users/alex/Developer/repos/fiscus/model/model.csproj",
       "projectName": "model",
-      "projectPath": "/Users/alex/Developer/repos/fiscus/fiscus/model/model.csproj",
+      "projectPath": "/Users/alex/Developer/repos/fiscus/model/model.csproj",
       "packagesPath": "/Users/alex/.nuget/packages/",
-      "outputPath": "/Users/alex/Developer/repos/fiscus/fiscus/model/obj/",
+      "outputPath": "/Users/alex/Developer/repos/fiscus/model/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/alex/.nuget/NuGet/NuGet.Config"

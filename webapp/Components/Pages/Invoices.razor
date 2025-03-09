@@ -8,17 +8,19 @@
 @inject IRepository<Invoice> repository
 @inject IRepository<Organisation> _organisationRepository
 @inject IDialogService DialogService
+@inject ISnackbar Snackbar
 
 <PageTitle>Rechnungen</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">Rechnungen</MudText>
-<MudText Class="mb-8">Hier siehst du alle Rechnungen von @AppState.SelectedOrganization.Name</MudText>
+<MudText Class="mb-8">Hier siehst du alle Rechnungen, die von deiner Organisation "@AppState.SelectedOrganization.Name" ausgestellt wurden.</MudText>
 
-<MudTable Items="@_invoices" Hover="true" Striped="true" Filter="new Func<Invoice,bool>(FilterFunc1)" @bind-SelectedItem="_selectedInvoice" Loading="@_loading">
+<MudTable Items="@_invoices" Hover="true" Striped="true" Filter="new Func<Invoice,bool>(FilterFunc1)" @bind-SelectedItems="_selectedInvoices" Loading="@_loading" MultiSelection="true" SelectOnRowClick="false">
     <ToolBarContent>
-        <MudButtonGroup Color="Color.Primary" Variant="Variant.Outlined">
-            <MudButton StartIcon="@Icons.Material.Filled.Refresh" OnClick="RefreshData">Refresh</MudButton>
-            <MudButton StartIcon="@Icons.Material.Filled.Receipt" OnClick="OpenAddDialogAsync">Rechnung hinzufügen</MudButton>
+        <MudButtonGroup Color="Color.Primary" Variant="Variant.Outlined" OverrideStyles="false">
+            <MudIconButton Icon="@Icons.Material.Filled.Refresh" OnClick="RefreshData" Variant="Variant.Outlined"></MudIconButton>
+            <MudIconButton Icon="@Icons.Material.Filled.Add" OnClick="OpenAddDialogAsync" Variant="Variant.Outlined"></MudIconButton>
+            <MudIconButton Icon="@Icons.Material.Filled.Delete" OnClick="DeleteSelection" Color="Color.Error" Variant="Variant.Outlined" Disabled="@(_selectedInvoices.Count == 0)"></MudIconButton>
         </MudButtonGroup>
         <MudSpacer/>
         <MudTextField @bind-Value="searchString1" Placeholder="Suche" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
@@ -31,19 +33,14 @@
         <MudTh>bezahlt?</MudTh>
     </HeaderContent>
     <RowTemplate>
-        <MudTd DataLabel="Rechnungsnr.">@context.Code</MudTd>
+        <MudTd DataLabel="Rechnungsnr.">
+            <MudLink Href="@context.Link" Underline="Underline.Hover" Target="_blank">@context.Code</MudLink>
+        </MudTd>
         <MudTd DataLabel="Datum">@context.Date.ToShortDateString()</MudTd>
         <MudTd DataLabel="An">@context.Recipient.Name</MudTd>
         <MudTd DataLabel="Summe">@context.Total€</MudTd>
         <MudTd DataLabel="Bezahlt">
-            @if (context.Paid)
-            {
-                <MudIcon Icon="@Icons.Material.Filled.CheckCircle" Color="Color.Success"></MudIcon>
-            }
-            else
-            {
-                <MudIcon Icon="@Icons.Material.Filled.Cancel" Color="Color.Error"></MudIcon>
-            }
+            <MudIconButton Icon="@(context.Paid ? Icons.Material.Filled.CheckCircle : Icons.Material.Filled.Cancel)" Color="@(context.Paid ? Color.Success : Color.Error)" OnClick="() => SetPaid(context)"></MudIconButton>
         </MudTd>
     </RowTemplate>
 </MudTable>
@@ -53,7 +50,7 @@
     [CascadingParameter] public AppState AppState { get; set; }
     
     IEnumerable<Invoice> _invoices = new List<Invoice>();
-    Invoice _selectedInvoice;
+    HashSet<Invoice> _selectedInvoices = new HashSet<Invoice>();
     string searchString1;
     bool _loading;
 
@@ -100,6 +97,29 @@
         if (!result.Canceled)
         // TODO: Check if successful -> show Snackbar
             await RefreshData();
+    }
+
+    private async Task DeleteSelection()
+    {
+        foreach (var inv in _selectedInvoices)
+        {
+            await repository.DeleteAsync(inv);
+            // TODO: Rechnung wird nicht gelöscht
+        }
+
+        Snackbar.Add("Die ausgewählten Rechnungen wurden gelöscht", Severity.Success);
+
+        RefreshData();
+    }
+
+    private async Task SetPaid(Invoice context)
+    {
+        context.Paid = !context.Paid;
+        await repository.UpdateAsync(context);
+        string str = context.Paid ? "bezahlt" : "unbezahlt";
+        Snackbar.Add($"Die Rechnung wurde als {str} markiert.", Severity.Success);
+
+        RefreshData();
     }
 
 }

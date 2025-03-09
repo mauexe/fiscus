@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SBLQiUZUT3I=",
+  "dgSpecHash": "AACoKIFssc8=",
   "success": true,
-  "projectFilePath": "/Users/alex/Developer/repos/fiscus/fiscus/domain/domain.csproj",
+  "projectFilePath": "/Users/alex/Developer/repos/fiscus/domain/domain.csproj",
   "expectedPackageFiles": [
     "/Users/alex/.nuget/packages/microsoft.data.sqlite.core/9.0.2/microsoft.data.sqlite.core.9.0.2.nupkg.sha512",
     "/Users/alex/.nuget/packages/microsoft.entityframeworkcore/9.0.2/microsoft.entityframeworkcore.9.0.2.nupkg.sha512",
