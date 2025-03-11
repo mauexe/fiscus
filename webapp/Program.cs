@@ -15,7 +15,7 @@ builder.Services.AddMudServices();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddDbContext<FiscusDbContext>(options => options.UseSqlite($"Data Source=Database/fiscus.sqlite"));
+builder.Services.AddDbContext<FiscusDbContext>(options => options.UseSqlite($"Data Source=/app/data/fiscus.sqlite"));
 builder.Services.AddScoped<IRepository<Invoice>,InvoiceRepository>();
 builder.Services.AddScoped<IInvoiceRepository,InvoiceRepository>();
 builder.Services.AddScoped<IRepository<Recipient>,RecipientRepository>();
@@ -30,6 +30,18 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+}
+
+// Create Db
+var dbPath = "/app/data";
+if (!Directory.Exists(dbPath))
+{
+    Directory.CreateDirectory(dbPath);
+}
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<FiscusDbContext>();
+    dbContext.Database.Migrate(); // Führt Migrationen aus oder erstellt die DB
 }
 
 app.UseHttpsRedirection();
