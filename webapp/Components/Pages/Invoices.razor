@@ -13,7 +13,7 @@
 <PageTitle>Rechnungen</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">Rechnungen</MudText>
-<MudText Class="mb-8">Hier siehst du alle Rechnungen, die von deiner Organisation "@AppState.SelectedOrganization.Name" ausgestellt wurden.</MudText>
+<MudText Class="mb-8">Hier siehst du alle Rechnungen, die von deiner Organisation "@(AppState.SelectedOrganization is not null ? AppState.SelectedOrganization.Name : "Lädt...")" ausgestellt wurden.</MudText>
 
 <MudTable Items="@_invoices" Hover="true" Striped="true" Filter="new Func<Invoice,bool>(FilterFunc1)" @bind-SelectedItems="_selectedInvoices" Loading="@_loading" MultiSelection="true" SelectOnRowClick="false">
     <ToolBarContent>
@@ -23,7 +23,7 @@
             <MudIconButton Icon="@Icons.Material.Filled.Delete" OnClick="DeleteSelection" Color="Color.Error" Variant="Variant.Outlined" Disabled="@(_selectedInvoices.Count == 0)"></MudIconButton>
         </MudButtonGroup>
         <MudSpacer/>
-        <MudTextField @bind-Value="searchString1" Placeholder="Suche" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+        <MudTextField @bind-Value="_searchString1" Placeholder="Suche" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
     </ToolBarContent>
     <HeaderContent>
         <MudTh>Rechnungsnr.</MudTh>
@@ -51,12 +51,12 @@
     
     IEnumerable<Invoice> _invoices = new List<Invoice>();
     HashSet<Invoice> _selectedInvoices = new HashSet<Invoice>();
-    string searchString1;
+    string _searchString1 = "";
     bool _loading;
 
     protected override async Task OnInitializedAsync()
     {
-        RefreshData();
+        await RefreshData();
     }
 
     async Task RefreshData()
@@ -68,7 +68,7 @@
         StateHasChanged();
     }
     
-    private bool FilterFunc1(Invoice invoice) => FilterFunc(invoice, searchString1);
+    private bool FilterFunc1(Invoice invoice) => FilterFunc(invoice, _searchString1);
     
     private bool FilterFunc(Invoice invoice, string searchString)
     {
@@ -109,7 +109,7 @@
 
         Snackbar.Add("Die ausgewählten Rechnungen wurden gelöscht", Severity.Success);
 
-        RefreshData();
+        await RefreshData();
     }
 
     private async Task SetPaid(Invoice context)
@@ -119,7 +119,7 @@
         string str = context.Paid ? "bezahlt" : "unbezahlt";
         Snackbar.Add($"Die Rechnung wurde als {str} markiert.", Severity.Success);
 
-        RefreshData();
+        await RefreshData();
     }
 
 }

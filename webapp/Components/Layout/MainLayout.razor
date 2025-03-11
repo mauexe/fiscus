@@ -23,10 +23,14 @@
                     <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End"/>
                 </ActivatorContent>
                 <ChildContent>
-                    @foreach (var i in _organisations)
+                    @if (_organisations is null || _organisations.Any())
                     {
-                        <MudMenuItem Label="@i.Name" OnClick="() => ChangeOrganisation(i)"></MudMenuItem>
+                        @foreach (var i in _organisations)
+                        {
+                            <MudMenuItem Label="@i.Name" OnClick="() => ChangeOrganisation(i)"></MudMenuItem>
+                        }
                     }
+                    <MudMenuItem Label=" + erstellen" OnClick="() => { }" /> @* TODO: create organisation *@
                 </ChildContent>
             </MudMenu>
         </MudAppBar>
@@ -77,8 +81,6 @@
 
     protected override void OnInitialized()
     {
-        base.OnInitialized();
-
         _theme = new()
         {
             PaletteLight = _lightPalette,
@@ -145,7 +147,6 @@
 
     private async Task ChangeOrganisation(Organisation organisation)
     {
-        Console.WriteLine("Change Organisation ! ! !");
         AppState.SelectedOrganization = organisation;
         StateHasChanged();
     }
