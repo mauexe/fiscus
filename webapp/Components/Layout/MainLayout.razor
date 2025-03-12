@@ -30,7 +30,11 @@
                             <MudMenuItem Label="@i.Name" OnClick="() => ChangeOrganisation(i)"></MudMenuItem>
                         }
                     }
-                    <MudMenuItem Label=" + erstellen" OnClick="() => { }" /> @* TODO: create organisation *@
+                    <MudMenuItem OnClick="() => { }">
+                        <MudIcon Icon="@Icons.Material.Filled.Add">
+                        </MudIcon>
+                    </MudMenuItem>
+                    @* TODO: create organisation *@
                 </ChildContent>
             </MudMenu>
         </MudAppBar>

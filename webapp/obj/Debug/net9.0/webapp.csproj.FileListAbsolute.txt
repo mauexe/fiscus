@@ -304,3 +304,4 @@
 /Users/alex/Developer/repos/fiscus/webapp/obj/Debug/net9.0/webapp.pdb
 /Users/alex/Developer/repos/fiscus/webapp/obj/Debug/net9.0/webapp.genruntimeconfig.cache
 /Users/alex/Developer/repos/fiscus/webapp/obj/Debug/net9.0/ref/webapp.dll
+/Users/alex/Developer/repos/fiscus/webapp/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

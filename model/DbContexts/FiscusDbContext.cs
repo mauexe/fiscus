@@ -1,9 +1,10 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using model.Entities;
 
-namespace model.DbContext;
+namespace model.DbContexts;
 
-public class FiscusDbContext : Microsoft.EntityFrameworkCore.DbContext
+public class FiscusDbContext : IdentityDbContext<FiscusUser>
 {
     public DbSet<Organisation> Organisations { get; set; }
     public DbSet<Invoice> Invoices { get; set; }
@@ -21,6 +22,8 @@ public class FiscusDbContext : Microsoft.EntityFrameworkCore.DbContext
         builder.Entity<Invoice>().Navigation(i => i.IssuedBy).AutoInclude();
         builder.Entity<Invoice>().Navigation(i => i.Recipient).AutoInclude();
         builder.Entity<Invoice>().Navigation(i => i.Positions).AutoInclude();
+        builder.Entity<FiscusUser>().Navigation(f => f.Organisations).AutoInclude();
+        builder.Entity<Organisation>().HasMany<FiscusUser>().WithMany(o => o.Organisations);
         base.OnModelCreating(builder);
     }
 }

@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using model.DbContext;
+using model.DbContexts;
 using model.Entities;
 
 namespace domain;

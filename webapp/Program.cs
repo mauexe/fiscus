@@ -1,6 +1,7 @@
 using domain;
 using Microsoft.EntityFrameworkCore;
-using model.DbContext;
+using model.DbContexts;
+using Microsoft.AspNetCore.Identity;
 using model.Entities;
 using MudBlazor.Services;
 using webapp.Components;
@@ -21,6 +22,16 @@ builder.Services.AddScoped<IInvoiceRepository,InvoiceRepository>();
 builder.Services.AddScoped<IRepository<Recipient>,RecipientRepository>();
 builder.Services.AddScoped<IRepository<Organisation>,OrganisationRepository>();
 builder.Services.AddScoped<AppState>();
+
+builder.Services.AddIdentity<FiscusUser, IdentityRole>()
+    .AddEntityFrameworkStores<FiscusDbContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/login";
+    options.AccessDeniedPath = "/access-denied";
+});
 
 var app = builder.Build();
 
@@ -44,8 +55,12 @@ using (var scope = app.Services.CreateScope())
     dbContext.Database.Migrate(); // Führt Migrationen aus oder erstellt die DB
 }
 
+
+
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseAntiforgery();
 

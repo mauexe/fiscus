@@ -3,14 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace model.Entities;
 
-[Table("recipients")]
 public class Recipient
 {
-    [Column("recipient_id")]
     [Key]
     public int Id { get; set; }
     
-    [Column("name")]
     [Required]
     [MaxLength(50)]
     public required string Name { get; set; }

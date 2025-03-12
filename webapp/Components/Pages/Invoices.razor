@@ -1,8 +1,9 @@
 @page "/invoices"
 @using System.ComponentModel
 @using domain
+@using Microsoft.AspNetCore.Authorization
 @using Microsoft.EntityFrameworkCore
-@using model.DbContext
+@using model.DbContexts
 @using model.Entities
 @using webapp.Components.Dialogs
 @using webapp.Configuration
@@ -10,6 +11,7 @@
 @inject IRepository<Organisation> _organisationRepository
 @inject IDialogService DialogService
 @inject ISnackbar Snackbar
+@attribute [Authorize]
 
 <PageTitle>Rechnungen</PageTitle>
 
