@@ -531,6 +531,88 @@
       ]
     },
     {
+      "Route": "docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf",
+      "AssetFile": "docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 12:37:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.uqv0a4hb1c.pdf",
+      "AssetFile": "docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 12:37:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        },
+        {
+          "Name": "label",
+          "Value": "docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf"
+        }
+      ]
+    },
+    {
       "Route": "docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf",
       "AssetFile": "docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf",
       "Selectors": [],

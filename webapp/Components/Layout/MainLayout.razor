@@ -2,49 +2,53 @@
 @using domain
 @using model.Entities
 @using webapp.Configuration
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
 @inherits LayoutComponentBase
 @inject AppState AppState
+@inject NavigationManager Navigation
 @inject IRepository<Organisation> _organisationRepository
 
 <MudThemeProvider @ref="@_mudThemeProvider" @bind-IsDarkMode="@_isDarkMode" Theme="@_theme"/>
 <MudPopoverProvider/>
 <MudDialogProvider/>
 <MudSnackbarProvider/>
+
 <MudLayout>
-    <CascadingValue Value="AppState">
-        <MudAppBar Elevation="1">
-            <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start"
-                           OnClick="@((e) => DrawerToggle())"/>
-            <MudText Typo="Typo.h5" Class="ml-3">fiscus</MudText>
-            <MudSpacer/>
-            <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle"/>
-            <MudMenu>
-                <ActivatorContent>
-                    <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End"/>
-                </ActivatorContent>
-                <ChildContent>
-                    @if (_organisations is null || _organisations.Any())
-                    {
-                        @foreach (var i in _organisations)
-                        {
-                            <MudMenuItem Label="@i.Name" OnClick="() => ChangeOrganisation(i)"></MudMenuItem>
-                        }
-                    }
-                    <MudMenuItem OnClick="() => { }">
-                        <MudIcon Icon="@Icons.Material.Filled.Add">
-                        </MudIcon>
-                    </MudMenuItem>
-                    @* TODO: create organisation *@
-                </ChildContent>
-            </MudMenu>
-        </MudAppBar>
-        <MudDrawer id="nav-drawer" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
-            <NavMenu/>
-        </MudDrawer>
-        <MudMainContent Class="mt-16 pa-4">
-            @Body
-        </MudMainContent>
-    </CascadingValue>
+                <CascadingValue Value="AppState">
+                    <MudAppBar Elevation="1">
+                        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start"
+                                       OnClick="@((e) => DrawerToggle())"/>
+                        <MudText Typo="Typo.h5" Class="ml-3">fiscus</MudText>
+                        <MudSpacer/>
+                        <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle"/>
+                        <MudMenu>
+                            <ActivatorContent>
+                                <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End"/>
+                            </ActivatorContent>
+                            <ChildContent>
+                                @if (_organisations is null || _organisations.Any())
+                                {
+                                    @foreach (var i in _organisations)
+                                    {
+                                        <MudMenuItem Label="@i.Name" OnClick="() => ChangeOrganisation(i)"></MudMenuItem>
+                                    }
+                                }
+                                <MudMenuItem OnClick="() => { }">
+                                    <MudIcon Icon="@Icons.Material.Filled.Add">
+                                    </MudIcon>
+                                </MudMenuItem>
+                                @* TODO: create organisation *@
+                            </ChildContent>
+                        </MudMenu>
+                    </MudAppBar>
+                    <MudDrawer id="nav-drawer" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+                        <NavMenu/>
+                    </MudDrawer>
+                    <MudMainContent Class="mt-16 pa-4">
+                        @Body
+                    </MudMainContent>
+                </CascadingValue>
 </MudLayout>
 
 
@@ -73,6 +77,13 @@
     protected override async Task OnInitializedAsync()
     {
         _organisations = await _organisationRepository.GetAllAsync();
+
+        if (!_organisations.Any())
+        {
+            
+        }
+            
+        
         AppState.SelectedOrganization = _organisations.First();
     }
 

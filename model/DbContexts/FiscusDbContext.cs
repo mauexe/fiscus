@@ -4,7 +4,7 @@ using model.Entities;
 
 namespace model.DbContexts;
 
-public class FiscusDbContext : IdentityDbContext<FiscusUser>
+public class FiscusDbContext : DbContext
 {
     public DbSet<Organisation> Organisations { get; set; }
     public DbSet<Invoice> Invoices { get; set; }
@@ -22,8 +22,8 @@ public class FiscusDbContext : IdentityDbContext<FiscusUser>
         builder.Entity<Invoice>().Navigation(i => i.IssuedBy).AutoInclude();
         builder.Entity<Invoice>().Navigation(i => i.Recipient).AutoInclude();
         builder.Entity<Invoice>().Navigation(i => i.Positions).AutoInclude();
-        builder.Entity<FiscusUser>().Navigation(f => f.Organisations).AutoInclude();
-        builder.Entity<Organisation>().HasMany<FiscusUser>().WithMany(o => o.Organisations);
+
+        builder.Entity<Organisation>().HasData(new Organisation() { Id = 1, Name = "Personal" });
         base.OnModelCreating(builder);
     }
 }

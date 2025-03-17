@@ -16,22 +16,12 @@ builder.Services.AddMudServices();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddDbContext<FiscusDbContext>(options => options.UseSqlite($"Data Source=/app/data/fiscus.sqlite"));
+builder.Services.AddDbContext<FiscusDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("Database"))); // TODO: add /app/data/ when release!
 builder.Services.AddScoped<IRepository<Invoice>,InvoiceRepository>();
 builder.Services.AddScoped<IInvoiceRepository,InvoiceRepository>();
 builder.Services.AddScoped<IRepository<Recipient>,RecipientRepository>();
 builder.Services.AddScoped<IRepository<Organisation>,OrganisationRepository>();
 builder.Services.AddScoped<AppState>();
-
-builder.Services.AddIdentity<FiscusUser, IdentityRole>()
-    .AddEntityFrameworkStores<FiscusDbContext>()
-    .AddDefaultTokenProviders();
-
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.LoginPath = "/login";
-    options.AccessDeniedPath = "/access-denied";
-});
 
 var app = builder.Build();
 
@@ -41,14 +31,16 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+    
+    var dbPath = "/app/data";
+    if (!Directory.Exists(dbPath))
+    {
+        Directory.CreateDirectory(dbPath);
+    }
 }
 
 // Create Db
-var dbPath = "/app/data";
-if (!Directory.Exists(dbPath))
-{
-    Directory.CreateDirectory(dbPath);
-}
+
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<FiscusDbContext>();
@@ -58,9 +50,6 @@ using (var scope = app.Services.CreateScope())
 
 
 app.UseHttpsRedirection();
-
-app.UseAuthentication();
-app.UseAuthorization();
 
 app.UseAntiforgery();
 

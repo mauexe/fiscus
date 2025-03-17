@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/23d501e2-efe9-4c7c-b43c-c9c3ae270069.pdf",
+      "PackagePath": "staticwebassets/docs/23d501e2-efe9-4c7c-b43c-c9c3ae270069.pdf"
+    },
+    {
+      "Id": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf",
+      "PackagePath": "staticwebassets/docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf"
+    },
+    {
+      "Id": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf",
+      "PackagePath": "staticwebassets/docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf"
+    },
+    {
+      "Id": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf",
+      "PackagePath": "staticwebassets/docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf"
+    },
+    {
+      "Id": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "obj/Release/net9.0/staticwebassets/msbuild.build.webapp.props",
+      "PackagePath": "build\\webapp.props"
+    },
+    {
+      "Id": "obj/Release/net9.0/staticwebassets/msbuild.buildMultiTargeting.webapp.props",
+      "PackagePath": "buildMultiTargeting\\webapp.props"
+    },
+    {
+      "Id": "obj/Release/net9.0/staticwebassets/msbuild.buildTransitive.webapp.props",
+      "PackagePath": "buildTransitive\\webapp.props"
+    },
+    {
+      "Id": "obj/Release/net9.0/staticwebassets/msbuild.webapp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Release/net9.0/staticwebassets/msbuild.webapp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

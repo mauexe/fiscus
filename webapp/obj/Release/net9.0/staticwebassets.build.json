@@ -1,0 +1,1222 @@
+{
+  "Version": 1,
+  "Hash": "kYGTapURN7xtxG+G8ogcTaV8F057XPpe/dhPxDE9NGA=",
+  "Source": "webapp",
+  "BasePath": "_content/webapp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "webapp/wwwroot",
+      "Source": "webapp",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hmu6kx9mgf",
+      "Integrity": "d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.css"
+    },
+    {
+      "Identity": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tspksaymx7",
+      "Integrity": "Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.js"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/0wz98yz2xy-tspksaymx7.gz",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "xkcquwljt6",
+      "Integrity": "z8/XAc3AeAXc1X3c+jXsiGY1vYs/EgJPYK13Yw5TETE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.js"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/tzxjg6is5z-hmu6kx9mgf.gz",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "is5iy3q3ab",
+      "Integrity": "0pvcrYJUYNo3PuVyYd3+ToMm/q8Z85g+5tcv8c5WzsY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.css"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/x96oruzo2r-2jeq8efc6q.gz",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "favicon#[.{fingerprint=2jeq8efc6q}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/favicon.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "wsw9hizzii",
+      "Integrity": "UDfW/g1NO6ZBusSk277DL5ykZQYfBt+KP7lGtjLTDrk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/23d501e2-efe9-4c7c-b43c-c9c3ae270069.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/23d501e2-efe9-4c7c-b43c-c9c3ae270069#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqv0a4hb1c",
+      "Integrity": "SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/23d501e2-efe9-4c7c-b43c-c9c3ae270069.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/3feb574b-0b6e-4407-a703-9c7d626355dc#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqv0a4hb1c",
+      "Integrity": "SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqv0a4hb1c",
+      "Integrity": "SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "docs/6159c329-349b-41a8-8a0c-fc592c35643b#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqv0a4hb1c",
+      "Integrity": "SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf"
+    },
+    {
+      "Identity": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/favicon.ico",
+      "SourceId": "webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/",
+      "BasePath": "_content/webapp",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2jeq8efc6q",
+      "Integrity": "8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon.ico"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/tzxjg6is5z-hmu6kx9mgf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000015496428"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64530"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0pvcrYJUYNo3PuVyYd3+ToMm/q8Z85g+5tcv8c5WzsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css.gz",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/tzxjg6is5z-hmu6kx9mgf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64530"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0pvcrYJUYNo3PuVyYd3+ToMm/q8Z85g+5tcv8c5WzsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0pvcrYJUYNo3PuVyYd3+ToMm/q8Z85g+5tcv8c5WzsY="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.hmu6kx9mgf.css",
+      "AssetFile": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hmu6kx9mgf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/0wz98yz2xy-tspksaymx7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000085389804"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11710"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8/XAc3AeAXc1X3c+jXsiGY1vYs/EgJPYK13Yw5TETE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js.gz",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/0wz98yz2xy-tspksaymx7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8/XAc3AeAXc1X3c+jXsiGY1vYs/EgJPYK13Yw5TETE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8/XAc3AeAXc1X3c+jXsiGY1vYs/EgJPYK13Yw5TETE="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.tspksaymx7.js",
+      "AssetFile": "/Users/alex/.nuget/packages/mudblazor/8.3.0/staticwebassets/MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tspksaymx7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "docs/23d501e2-efe9-4c7c-b43c-c9c3ae270069.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/23d501e2-efe9-4c7c-b43c-c9c3ae270069.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 13:49:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/23d501e2-efe9-4c7c-b43c-c9c3ae270069.uqv0a4hb1c.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/23d501e2-efe9-4c7c-b43c-c9c3ae270069.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 13:49:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/23d501e2-efe9-4c7c-b43c-c9c3ae270069.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 15:11:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/3feb574b-0b6e-4407-a703-9c7d626355dc.uqv0a4hb1c.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 15:11:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/3feb574b-0b6e-4407-a703-9c7d626355dc.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 12:37:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.uqv0a4hb1c.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 12:37:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/5cf37aa1-1859-4039-bad1-d23b02dc0fea.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 15:44:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "docs/6159c329-349b-41a8-8a0c-fc592c35643b.uqv0a4hb1c.pdf",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 15:44:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqv0a4hb1c"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/6159c329-349b-41a8-8a0c-fc592c35643b.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SrWGbcRtQwmpGk6X5JLzmGmOAZu45EoAzXA8F+XKqEY="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.2jeq8efc6q.ico",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/x96oruzo2r-2jeq8efc6q.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000342348511"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2920"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UDfW/g1NO6ZBusSk277DL5ykZQYfBt+KP7lGtjLTDrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 09:45:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2jeq8efc6q"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.2jeq8efc6q.ico",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 09:45:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2jeq8efc6q"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.2jeq8efc6q.ico.gz",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/x96oruzo2r-2jeq8efc6q.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UDfW/g1NO6ZBusSk277DL5ykZQYfBt+KP7lGtjLTDrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 09:45:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2jeq8efc6q"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UDfW/g1NO6ZBusSk277DL5ykZQYfBt+KP7lGtjLTDrk="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/x96oruzo2r-2jeq8efc6q.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000342348511"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2920"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UDfW/g1NO6ZBusSk277DL5ykZQYfBt+KP7lGtjLTDrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 09:45:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/wwwroot/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 09:45:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico.gz",
+      "AssetFile": "/Users/alex/Developer/repos/fiscus/webapp/obj/Release/net9.0/compressed/x96oruzo2r-2jeq8efc6q.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UDfW/g1NO6ZBusSk277DL5ykZQYfBt+KP7lGtjLTDrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 09:45:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UDfW/g1NO6ZBusSk277DL5ykZQYfBt+KP7lGtjLTDrk="
+        }
+      ]
+    }
+  ]
+}
